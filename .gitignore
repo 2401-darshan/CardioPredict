@@ -1,0 +1,25 @@
+# Frontend dependencies
+frontend/node_modules/
+
+# Frontend build
+frontend/dist/
+
+# Environment files
+.env
+.env.local
+frontend/.env
+frontend/.env.local
+
+# Python
+backend/__pycache__/
+*.pyc
+backend/.venv/
+.venv/
+venv/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

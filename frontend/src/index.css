@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-canvas-light text-ink-light dark:bg-canvas-dark dark:text-ink-dark font-sans antialiased transition-colors duration-200;
+}
+
+::selection {
+  @apply bg-brand-400/30;
+}
+
+/* thin scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-line-light dark:bg-line-dark rounded-full;
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-wide text-brand-600 dark:text-brand-300;
+}
+
+.panel {
+  @apply bg-surface-light dark:bg-surface-dark border border-line-light dark:border-line-dark rounded-xl;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-ink-light text-white dark:bg-brand-400 dark:text-ink-dark font-semibold px-5 py-3 transition-colors hover:bg-ink-light/85 dark:hover:bg-brand-300;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line-light dark:border-line-dark bg-surface-light dark:bg-surface-dark font-semibold px-5 py-3 transition-colors hover:border-brand-400/60;
+}
+
+.input-field {
+  @apply w-full rounded-lg border border-line-light dark:border-line-dark bg-canvas-light dark:bg-canvas-dark px-4 py-3 text-ink-light dark:text-ink-dark placeholder:text-muted-light dark:placeholder:text-muted-dark focus:outline-none focus:ring-2 focus:ring-brand-400/40 focus:border-brand-400 transition-colors;
+}
+
+.label-sm {
+  @apply text-sm font-semibold text-ink-light dark:text-ink-dark;
+}
+
+/* Opening & scroll scale animation keyframes */
+@keyframes scaleInPage {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-scale-in {
+  animation: scaleInPage 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes loadingProgress {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
