@@ -316,7 +316,7 @@ It combines machine learning, REST API development, frontend development, and cl
 
 ## 👨‍💻 Author
 
-**Darshan**
+**Darshan Jakasaniya**
 
 B.Sc. (Hons.) Computer Science
 
@@ -325,8 +325,3 @@ B.Sc. (Hons.) Computer Science
 ## 📄 License
 
 This project is intended for educational purposes.
-```
-
-After pasting, click **Commit changes**.
-
-Your GitHub repository will then have a professional README with the **Live Demo** prominently available to anyone viewing your project.
