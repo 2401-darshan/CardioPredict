@@ -47,7 +47,7 @@ export default function Navbar() {
             <SlidersHorizontal size={14} /> API Config
           </button>
           <a
-            href="https://github.com"
+            href="https://github.com/2401-darshan/CardioPredict"
             className="btn-secondary !px-3 !py-2 text-xs font-mono gap-2"
           >
             <Code2 size={14} /> React + Vite Codebase
